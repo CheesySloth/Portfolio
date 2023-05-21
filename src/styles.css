@@ -1,0 +1,204 @@
+
+:root {
+    /* Old School Font Colours thanks to 'Journeyman Geek' @
+     https://superuser.com/questions/361297/what-colour-is-the-dark-green-on-old-fashioned-green-screen-computer-displays */
+    --amber: #FFB000;
+    --lt-amber: #FFBC00;
+    --green-1: #33FF00;
+    --apple: #33FF33;
+    --green-2: #00FF33;
+    --apple-c: #66FF66;
+    --green-3: #00ff66;
+
+    /*Other Colours*/
+    --main-bg: #22242f;
+    --main-bg-transparent: #22242f90;
+    --soft-dark: #3e4564;
+    --buttons:rgba(255, 255, 255, 0.129);
+    --light: #a8aabc;
+}
+
+ /* The animation code */
+ @keyframes example {
+    0%   {
+        background-color: #22242f;
+    }
+    60%  {background-color: #262833;}
+    64%  {background-color: #2a2b33;}
+    100% {background-color: #22242f;}
+ }
+
+body {
+  font-family: 'Bruno Ace SC',cursive;
+  background-color: var(--main-bg);
+  color: var(--apple);
+}
+section {
+  height: 500px;
+  background-color: #000000;
+}
+.hero {
+  background: var(--main-bg);
+  background: radial-gradient(farthest-side, rgba(62,69,100,0.2) 0%, rgba(34,36,47,1) 78%);
+  height: 100vh;
+  font-size: 40px
+}
+footer {
+  height: 500px;
+  background-color: var(--main-bg);
+}
+nav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid var(var(--light));
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  font-size: 20px
+}
+li {
+  text-decoration: none
+}
+h1 {
+  font-size: 80px;
+  margin: 0
+}
+
+h2 {
+  font-size: 60px;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+  margin-left: 80px;
+  margin-bottom: 200px;
+}
+.button {
+  font-size: 30px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border: solid var(--buttons) 2px;
+
+  border-radius: 25px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 5px;
+  margin-top: 20px;
+  
+}
+.button:hover {
+  cursor: pointer;
+    background-color: var(--buttons);
+    color:#FFBC00;
+}
+
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    /* for horizontal aligning of child divs */
+    justify-content: center;
+}
+
+
+.logo {
+  height: 60px;
+  margin: 10px;
+  border-style: solid;
+  border-color: var(--light);
+  border-radius: 120px;
+  border-width: 2px;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  /* for horizontal aligning of child divs */
+  justify-content: center;
+}
+ 
+.icon {
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  padding-left: 10px;
+  padding-top: 25px;
+  fill: var(--light);
+}
+
+.sub-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+  color: var(--light);
+}
+
+.headshot {
+  width: 200px;
+  border-style: solid;
+  border-color: var(--light);
+  border-radius: 120px;
+  border-width: 2px;
+}
+
+.headshot-container {
+  display:flex;
+  align-items: center;
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+  border-style: solid;
+  border-color: var(--light);
+  border-radius: 50px;
+  border-width: 2px;
+}
+ 
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects-section {
+  padding: 80px;
+  height: 700px;
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.typed-out {
+  font-size:1vw;
+  margin: 10px;
+  overflow: hidden;
+  border-right: .15em solid var(--amber);
+  white-space: nowrap;
+  animation: typing 3s steps(30, end) forwards;
+  width: 1;
+}
+
+.container {
+  display: inline-block;
+  
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
