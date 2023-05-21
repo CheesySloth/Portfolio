@@ -16,6 +16,11 @@
     --soft-dark: #3e4564;
     --buttons:rgba(255, 255, 255, 0.129);
     --light: #a8aabc;
+
+    /*Animation vars*/
+    --animation-speed: 12s;
+    --animation-mult: 48s;
+    --animation-height: 15px;
 }
 
  /* The animation code */
@@ -82,6 +87,7 @@ h2 {
 .hero-text {
   margin-left: 80px;
   margin-bottom: 200px;
+  width: 100%;
 }
 .button {
   font-size: 30px;
@@ -182,23 +188,82 @@ h2 {
 }
 
 .typed-out {
-  font-size:1vw;
-  margin: 10px;
+  font-size: var(--animation-height);
   overflow: hidden;
-  border-right: .15em solid var(--amber);
+  border-right: .1px solid var(--amber);
   white-space: nowrap;
-  animation: typing 3s steps(30, end) forwards;
-  width: 1;
+  animation: typing var(--animation-speed)  forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  width: 0;
+}
+
+.filler {
+  font-size: var(--animation-height);
+  opacity: 1;
+  margin: 0;
 }
 
 .container {
   display: inline-block;
-  
+  width: fit-content;
+}
+
+.frame {
+  position: relative;
+  margin-left: 5px;
+  width: 100%;
+	overflow: hidden;
+}
+
+.center {
+  left: 0;
+  right: 0;
+}
+.carousel {
+  width: 100%;
+  text-align: center;
+  font-size: var(--animation-height);
+  line-height: var(--animation-height);
+  height: var(--animation-height);
+
+}
+.carousel .change_outer {
+  position: absolute;
+  top: 0;
+  text-align: left;
+  height: var(--animation-height);
+  overflow: hidden;
+}
+.carousel .change_outer .change_inner {
+  position: relative;
+  animation: rotate var(--animation-mult) ease-in-out infinite;
+  animation-delay: 2s;
+}
+.carousel .change_outer .container {
+  display: block;
+}
+
+@keyframes rotate {
+ 10%, 23.75%, 100% {
+            transform: translateY(0);
+  }
+  25%,48.75% {
+            transform: translateY(calc(var(--animation-height)*-1));
+  }
+  50%,73.75% {
+            transform: translateY(calc(var(--animation-height)*-2));
+  }
+  75%,98.75% {
+            transform: translateY(calc(var(--animation-height)*-3));
+  }
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  0% { width: 0 }
+  10% { width: 0 }
+  78% {width: 100% }
+  80% { width: 100% }
+  95% { width: 0 }
 }
-
 
