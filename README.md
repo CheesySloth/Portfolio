@@ -1,5 +1,5 @@
 **CheesySloth Portfolio Website: Design 1**
-<p>This portfolio design was inspired by [Ania Kubow](https://youtu.be/-D6oTPA4vXc)</p>
+<p>This portfolio design was inspired by Ania Kubow's tutorial that is no longer available.</p>
 
 I have adapted it to practice elements of CSS. In particular it features a carousel typewriter on the main page. This was developed in part because it looks cool but mostly for me to learn the relationships between different divs, classes and css animations. This has been achieved bthanks to:
 
