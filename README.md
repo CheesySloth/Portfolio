@@ -10,10 +10,12 @@ https://www.sitepoint.com/css-typewriter-effect/ by Matt Nikonorov
 The font colours included are inspired by phosphor monitors and the specific hexcodes were listed by Journeyman Geek @ https://superuser.com/questions/361297/what-colour-is-the-dark-green-on-old-fashioned-green-screen-computer-displays
 
 TODO:
--Add dropdown for projects to list featured as well as all.
--Create projects page where projects can be viewed in a list.
--Tidy up footer and add contact form.
--Design Tatiana (separate related project).
--Fix Linkedin
--Tidy Github
--Add real project links
+- Add dropdown for projects to list featured as well as all.
+- Create projects page where projects can be viewed in a list.
+- Tidy up footer and add contact form.
+- Finish and upload TATIANA (separate related blog project).
+- Update Linkedin
+- Add real projects
+
+> Stay cheesy :)
+
